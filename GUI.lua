@@ -200,7 +200,7 @@ notif("Loaded successfully! Created by Ap6ye2#1087", 5)
 end)
 
 local Tab3 = Window:NewTab("Credits")
-local Section2 = Tab3:NewSection("Ap6ye2#1087")
+local Section2 = Tab3:NewSection(Ap6ye2#1087)
 
 Section:NewButton("Backflip", "ButtonInfo", function()
     -- This file was generated using Luraph Obfuscator v11.7 by memcorrupt.
