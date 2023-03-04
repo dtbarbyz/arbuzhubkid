@@ -1,3 +1,8 @@
+local MessageSender = require(game.Players.LocalPlayer.PlayerScripts:WaitForChild("ChatScript"):WaitForChild("ChatMain"):WaitForChild("MessageSender"))
+MessageSender:RegisterSayMessageFunction(game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"))
+ 
+MessageSender:SendMessage("yoo, you use arbyz karapyz hub!", "All")
+
 -- Ссылка на Библиотеку
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 --[[ 
