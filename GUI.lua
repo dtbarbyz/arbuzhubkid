@@ -1,7 +1,17 @@
-local MessageSender = require(game.Players.LocalPlayer.PlayerScripts:WaitForChild("ChatScript"):WaitForChild("ChatMain"):WaitForChild("MessageSender"))
-MessageSender:RegisterSayMessageFunction(game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"))
+--MADE BY arbyz karapyz hub
+
+local function callback(Text)
+end
  
-MessageSender:SendMessage("yoo, you use arbyz karapyz hub!", "All")
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "arbyz karapyz hub";
+    Text = "hello you use arbyz karapyz hub!";
+    Duration = "5";
+    Callback = NotificationBindable;
+})
 
 -- Ссылка на Библиотеку
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
